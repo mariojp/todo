@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Todo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="texto_botao">Voltar</string>
+    <string name="title_activity_cadastro">CadastroActivity</string>
+
+    texto_botao
+</resources>
