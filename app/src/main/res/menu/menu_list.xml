@@ -10,6 +10,12 @@
         app:showAsAction="never" />
 
     <item
+        android:id="@+id/action_sync"
+        android:orderInCategory="100"
+        android:title="Sincronizar"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/action_nova"
         android:orderInCategory="100"
         android:title="Nova"

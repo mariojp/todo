@@ -78,6 +78,12 @@ public class ListActivity extends ActionBarActivity {
                 Intent intent = new Intent(this, CadastroActivity.class);
                 startActivity(intent);
                 return true;
+            case R.id.action_sync:
+                TarefaDAO dao = new TarefaDAO(this);
+                List<Tarefa> tarefas = dao.listar();
+                String json = new TarefaConversor().toJSON(tarefas);
+                String jsonDeResposta = new WebClient("http://www.meuservidor.com.br").post(json);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
 
